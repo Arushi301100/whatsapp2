@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html onload="start()">
+<head>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+font-family:orbitorn;
+}
+body {
+text-align:center;
+}
+.backupicon {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top:9vh;
+width:15%;
+margin-top:25vw;
+}
+.backupfound {
+color:hsl(171,50%,50%);
+font-size:4.5vw;
+margin-top:8vw;
+}
+.time {
+color:#666666;
+font-size:4vw;
+font-weight:400;
+line-height:5vw;
+margin-top:3vw;
+}
+.noti {
+font-size:4vw;
+font-weight:400;
+margin-top:5vw;
+}
+.restore, .skip {
+margin-top:55vw;
+bottom:0;
+color:#fefefe;
+background-color:hsl(135,95%,40%);
+border:none;
+border-radius:3px;
+font-size:4vw;
+font-weight:500;
+outline:none;
+padding:7vw;
+padding-top:4vw; 
+padding-bottom:4vw;
+box-shadow: 1px 2px 1px 0px #cccccc;
+width:41vw;
+}
+.restore:hover {
+background-color:hsla(135,100%,40%,0.7);
+ box-shadow: 1px 3px 2px 1px #cccccc;
+}
+.skip {
+margin-left:3vw;
+border:1px solid #cccccc;
+background-color:white;
+color:hsl(170,100%,23%);
+box-shadow:none;
+}
+.skip:hover {
+background-color:#eeeeee;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="hsl(170,100%,23%)">
+<title>Backup1</title>
+</head>
+<body>
+
+<img style="position:fixed;top:5vw;right:4vw;max-width:8vw; "onclick="alert('Click Restore')"class="more" src="icons/ic_more.png">
+<img src="icons/ic_backup_g.png" class="backupicon" >
+
+<h1 class="backupfound" >Backup found</h1>
+<p class="time" >12 hours ago<br>Size: 27 MB</p>
+<p class="noti" >Restore your messages and media from your<br>
+ phone's internal storage. If you don't restore now,<br>
+ you wouldn't be able to restore later.
+ </p>
+ <a href="backup2.html" ><button class="restore" >RESTORE</button></a>
+ <button class="skip" onclick="alert('Wou can not skip, please restore')" >SKIP</button>
+<br><br><br><br><br>
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

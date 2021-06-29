@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="hsl(170,100%,28%)">
+<title>Initializing</title>
+<style type="text/css">
+*{
+margin:0;
+padding:0;
+}
+body {
+font-family:orbitorn;
+text-align:center;
+padding-top:10vw;
+}
+
+img{
+display:block;
+margin-left:auto;
+margin-right:auto;
+width:80%;
+margin-top:15vw;
+}
+h4{
+color:hsl(170,100%,28%);
+}
+p{
+font-size:4.2vw;
+color:#888888;
+margin-top:3vw;
+font-weight:500;
+}
+h1{
+margin-top:10vw;
+color:hsl(170,100%,30%);
+font-weight:500;
+font-size:6vw;
+}
+</style>
+</head>
+<body onload="Timer()">
+<h4 >Initializing...</h4>
+<p > Please wait a moment</p>
+<img src="icons/onlogo.png" >
+<h1 id="loading" >75%</h1>
+<script type="text/javascript">
+var i =0;
+function Timer() {
+document.getElementById('loading').innerHTML= i +"%";
+ i++;
+  if (i >100) {
+  }
+  else {
+    setTimeout(Timer, 30);
+  }
+}
+
+setTimeout(function(){
+ window.open("main/chats.html", "_self");
+}, 6000);
+
+setTimeout(function(){
+ alert("Don't block popuos. Click on Always Show");
+}, 7000);
+
+</script>

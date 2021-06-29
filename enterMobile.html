@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="hsl(170,100%,28%)">
+<title>Enter Mobile</title>
+</head>
+<script type="text/javascript">
+
+</script>
+<link rel="stylesheet" href="styles.css"  >
+<style type="text/css">
+hr {
+display:inline-block;
+}
+.hrcode{
+display:inline-block;
+border-style: inset;
+border-width: .6px;
+border-color:hsl(170,100%,35%);
+}
+.hrcode {
+width:13%;
+border-color:hsl(170,100%,35%);
+}
+.hrno {
+display:inline-block;
+height:.6vw;
+width:62%;
+margin-left:6vw;
+background-color:hsl(170,100%,30%);
+}
+input  {
+margin-left:10vw;
+border:none;
+outline:none;
+text-align:left;
+font-size:5vw;
+font-weight:400;
+}
+.ulcountru  {
+width:80%;
+margin-left:50px;
+margin-right:50px;
+display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: auto;
+margin-right: auto;
+border-style: inset;
+border-width: .7px;
+border-color:hsl(170,100%,35%);
+}
+.code {
+display:inline-block;
+font-size:5vw;
+font-weight:400;
+margin-top:4vw;
+}
+.country {
+font-size:5vw;
+font-weight:400;
+margin-top:4.5vw;
+}
+.noti1 {
+color:black;
+}
+.btn2:hover {
+background-color:hsla(135,100%,40%,0.7);
+ box-shadow: 1px 3px 2px 1px #cccccc;
+}
+
+</style>
+<body onclick="ok()">
+<img style="position:fixed;top:5vw;right:5vw;max-width:8vw; "onclick="alert('Enter Your Mobile No.')"class="more" src="icons/ic_more.png">
+<h1 class="heading3" >Enter your phone number</h1>
+<p class="noti1" > WhatsApp will send an SMS message to verify<br>
+                  your phone no. <span class="blue" >What's my number?</span>
+</p>
+<h1 onclick="alert('not changable')" class="country" >India</h1><hr class="ulcountru" >
+<h1 onclick="alert('not changable')" class="code" > <span style="color:#aaaaaa" >+  </span> 91</h1>
+<input type="number" placeholder="phone number" autocomplete="true" ><br>
+<hr class="hrcode" ><div class="hrno" ></div>
+<p style="color:gray" class="noti1" >Carrier SMS charges may apply</p>
+<a href="verify.html" ><button class="btn2" >NEXT</button></a><br><br><br><br>
+
+</body>
+</html>
